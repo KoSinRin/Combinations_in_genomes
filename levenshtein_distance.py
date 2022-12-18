@@ -63,3 +63,11 @@ print(total_count)
 # Считаем долю самых "близких" комбинаций
 closest_combinations_ratio = count / total_count
 print(closest_combinations_ratio) 
+
+
+# При genome = "ACCCATACCCGT" и length = 4, этот код выведет следующие результаты:
+# ['ACCC', 'ACCC']
+# ['ACCC', 'ACCC'] -- Функция find_closest_combinations() вернула список ['ACCC', 'ACCC'], содержащий две комбинации с наименьшим расстоянием Левенштейна.
+# 2 -- Количество вхождений этих комбинаций в genome
+# 8 -- Общее количество комбинаций
+# 0.25 -- Отношение count/total_count
