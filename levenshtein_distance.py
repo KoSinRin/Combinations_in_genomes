@@ -50,8 +50,8 @@ print(count) # 2
 
 # Считаем общее количество комбинаций
 total_count = len(genome) - 3
-print(total_count) 
+print(total_count) # 8
 
 # Считаем долю самых "близких" комбинаций
 closest_combinations_ratio = count / total_count
-print(closest_combinations_ratio)
+print(closest_combinations_ratio) # 0.25
