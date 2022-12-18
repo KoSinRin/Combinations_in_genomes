@@ -37,3 +37,21 @@ def find_closest_combinations(genome):
     return closest_combinations
 # Тестируем функцию
 print(find_closest_combinations('ACCCATACCCGT')) # ['ACCC', 'ACCC']
+
+# Находим самые "близкие" комбинации
+closest_combinations = find_closest_combinations(genome)
+print(closest_combinations) # ['ACCC', 'ACCC']
+
+# Считаем количество самых "близких" комбинаций
+count = 0
+for combination in closest_combinations:
+    count += genome.count(combination)
+print(count) # 2
+
+# Считаем общее количество комбинаций
+total_count = len(genome) - 3
+print(total_count) 
+
+# Считаем долю самых "близких" комбинаций
+closest_combinations_ratio = count / total_count
+print(closest_combinations_ratio)
